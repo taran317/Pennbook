@@ -1,4 +1,4 @@
-# Overview of System
+# PennBook
 
 ## Instructions
 
@@ -81,7 +81,7 @@ More so than in the third homework, the adsorption algorithm requires careful co
 
 Another complication was choosing appropriate cutoff values to stop propagating labels and to stop iterating all together. Both of these we ultimately determined through trial and error. Due to the fact that the news suggestions had to be from the current day and there were only a small amount of articles each day, we had to choose sufficiently small cutoffs such that the labels could actually get to current news articles. This cutoff ended up being quite small just to recognize these node, and was simply determined through trial and error. Similar reasoning led to the cutoff to stop iterating. Using print statements in the livy job, I determined the approximate point at which the ordering of articles was constant and later iterations were simply unnecessary, and just stopped the job there. This cutoff was significantly larger than the propagate cutoff because this relative ordering became constant significantly quicker in our test cases.
 
-We implemented the following extra credit features:
+We implemented the following additional features:
 
 - LinkedIn Style friend requests, with the ability to accept and deny
 - Images hosted through Amazon S3, with the ability to send images through chat
